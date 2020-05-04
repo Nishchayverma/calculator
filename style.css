@@ -43,8 +43,8 @@ body{
 .heading{
     position: relative;
     font-family: 'PT Serif', serif;
-    top: 3vh;
-    left: 40vw;
+    top: 27px;
+    left: 600px;
     width: 400px;
     height: 95px;
     text-align: center;
@@ -56,26 +56,27 @@ body{
    letter-spacing: 6px;
    background: var(--color-gradient);
 }
+.moreFunctions{
+  display: none;
+}
+
 input[type=checkbox]{
 	height: 0;
 	width: 0;
   visibility: hidden;
-
 }
 
 .theme{
   position: absolute;
-  right: 5vw;
-  top: 1vh;
-
+  right: 90px;
+  top: 10px;
 }
 
-label {
+.theme label {
   
 	cursor: pointer;
-	width: 5vw;
-	height: 3vh;
- 
+	width: 75px;
+	height: 23px;
   background-color: #DCDCDC;
 	display: block;
 	border-radius: 50px;
@@ -83,38 +84,38 @@ label {
  
 }
 
-label:after {
+.theme label:after {
 	content: '';
 	position: absolute;
   left: -1px;
   top: -7px;
-	width: 2.5vw;
-	height: 5vh;
+	width: 38px;
+	height: 38px;
   background: #101010 url('https://i.ibb.co/FxzBYR9/night.png') center no-repeat;
 	border-radius: 50px;
 	transition: 0.6s;
 }
 
-input:checked + label {
+.theme input:checked + label {
   background-color: 		#888888;
   
 }
 
-input:checked + label:after {
+.theme input:checked + label:after {
 	left: calc(100% );
   transform: translateX(-100%);
   background: #383838 url('https://i.ibb.co/7JfqXxB/sunny.png') center no-repeat;
 }
 
-label:active:after {
-  width: 2vw;
-  height: 4vh;
+.theme label:active:after {
+  width: 38px;
+  height: 38px;
 }
 
 .output{
    
     position: relative;
-    top: 30vh;
+    top: 230px;
     left: 50%;
     transform: translate(-50%, -50%);
    width: 99%;
@@ -136,9 +137,9 @@ label:active:after {
 
 .side-functions{
   position: absolute;
-  top: 60vh;
+  top: 456px;
   left: 5px;
-  width: 27vw;
+  width: 27%;
   display: grid;
   grid-column-gap: 20px;
  grid-row-gap: 5px;
@@ -147,9 +148,9 @@ label:active:after {
 
 .main-functions{
     position: absolute;
-    top: 60vh;
+    top: 456px;
    right: 5px;
-   width: 70vw;
+   width: 70%;
    display: grid;
    grid-column-gap: 20px;
    grid-row-gap: 5px;
@@ -262,28 +263,67 @@ label:active:after {
     padding-top: 15px;
   }
   .theme{
-    top: 5px;
+    top: 8px;
     right: 40px;
   }
-  label{
-  width: 50px;
-  height: 15px;
+
+ .moreFunctions .material-icons{
+  font-size:36px;
+ }
+  .moreFunctions{ 
+   position: absolute;
+   top: 9px;
+   left: 30px;
+    display: inline; 
   }
-  label:after{
-    top: -3px;
-    left: 1px;
+  .moreFunctions label{
+    display: block;
+    width: 35px;
+    height: 25px;
+    padding: 2px 8px 14px 9px;
+    box-shadow: 0px 2px 4px  var(--output-shadow),
+    
+    0px 1px 6px  var(--output-shadow);
+    background-color: var(--color-item);
+    border-radius: 5px; 
+    cursor: pointer;
+  } 
+  .moreFunctions input:checked +label{
+      color: var(--red-keys);
+      box-shadow: inset -1px -1px 4px var(--output-shadow),
+      inset 1px 1px 3px var(--output-shadow);;
+  }
+
+  .moreFunctions input:checked ~ .main-functions{
+    width: 70%;
+    
+  }
+  
+ .theme label{
+  width: 55px;
+  height: 18px;
+  }
+ .theme label:after{
+    top: -4px;
+    left: 0px;
+    width: 24px;
+    height: 24px;
+    background: #101010 url('https://i.ibb.co/FxzBYR9/night.png')  no-repeat;
+    background-size: contain;
+  }
+ .theme label:active:after{
     width: 20px;
     height: 20px;
-    background: #101010 url('https://i.ibb.co/FxzBYR9/night.png') center  no-repeat;
   }
   
   .output{
+    top: 270px;
     width: 98%;
     height: 150px;
   }
  
   #input,#result{
-   top: 118px;
+   top: 120px;
    font-size: 115%;
   }
   #content{
@@ -292,15 +332,13 @@ label:active:after {
   }
   .main-functions{
     right: 7px;
-    top: 370px;
+    top: 445px;
     width: 98%;
     column-gap: 14px;
   }
   .side-functions{
     display: none;    
   }
-
-
 }
 
 

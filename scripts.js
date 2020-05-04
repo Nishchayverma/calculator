@@ -32,7 +32,7 @@ function clearOutput(){
   result="";
   document.getElementById("input").innerHTML=string;
   document.getElementById("result").innerHTML=result;
-  screen.width > 768 ? document.getElementById("input").style.top= "160px": document.getElementById("input").style.top= "118px";
+  screen.width > 768 ? document.getElementById("input").style.top= "160px": document.getElementById("input").style.top= "120px";
 }
 
 function clearSome(){
@@ -44,7 +44,7 @@ function displayClicked(char){
   
   if(result!=="")
     { 
-      screen.width > 768 ? document.getElementById("input").style.top= "160px": document.getElementById("input").style.top= "118px";
+      screen.width > 768 ? document.getElementById("input").style.top= "160px": document.getElementById("input").style.top= "120px";
      document.getElementById("result").innerHTML="";
   }
     string += char;
@@ -54,13 +54,15 @@ function displayClicked(char){
 function displayresult(){
    try{
      result= "= " + eval(string);
-  screen.width > 768 ? document.getElementById("input").style.top= "130px": document.getElementById("input").style.top= "96px";
+  screen.width > 768 ? document.getElementById("input").style.top= "130px" : document.getElementById("input").style.top= "96px";
   document.getElementById("result").innerHTML=result;
    string=result.substring(1,result.length);
    }
    catch(err){
     document.getElementById("input").innerHTML= err.name;
    }
-}
+  }
+
+  
 
 
