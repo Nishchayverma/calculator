@@ -333,7 +333,10 @@ input[type=checkbox]{
     column-gap: 14px;
   }
   .side-functions{
-    display: none;    
+    top: 445px;
+    width: 28%;
+    grid-column-gap: 14px;
+    display: none;
   }
 }
 
@@ -349,6 +352,12 @@ input[type=checkbox]{
   .theme{
     top: 8px;
     right: 20px;
+  }
+  .main-functions{
+    column-gap: 7px;
+  }
+  .side-functions{
+    grid-column-gap: 7px;
   }
   }
 @media only screen and (max-width: 500px){
@@ -395,10 +404,17 @@ input[type=checkbox]{
       width: 21px;
       height: 21px;
     }
+    .side-functions{
+      top: 445px;
+      width: 18%;
+      column-gap: 7px;
+      display: none;
+    }
+    
+
 }
 
 @media only screen and (max-width: 400px){
-
   .heading{
     left: 80px;
     height: 40px;
