@@ -113,7 +113,6 @@ input[type=checkbox]{
 }
 
 .output{
-   
     position: relative;
     top: 230px;
     left: 50%;
@@ -249,6 +248,9 @@ input[type=checkbox]{
   box-shadow: 0px 0px 2px 0px var(--color-shadow);
 }
 
+
+
+
 @media only screen and (max-width:768px){
   .heading{
     left: 200px;
@@ -282,7 +284,6 @@ input[type=checkbox]{
     height: 25px;
     padding: 2px 8px 14px 9px;
     box-shadow: 0px 2px 4px  var(--output-shadow),
-    
     0px 1px 6px  var(--output-shadow);
     background-color: var(--color-item);
     border-radius: 5px; 
@@ -291,12 +292,7 @@ input[type=checkbox]{
   .moreFunctions input:checked +label{
       color: var(--red-keys);
       box-shadow: inset -1px -1px 4px var(--output-shadow),
-      inset 1px 1px 3px var(--output-shadow);;
-  }
-
-  .moreFunctions input:checked ~ .main-functions{
-    width: 70%;
-    
+      inset 1px 1px 3px var(--output-shadow);
   }
   
  .theme label{
@@ -341,6 +337,78 @@ input[type=checkbox]{
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .heading{
+    left: 130px;
+    height: 60px;
+  }
+  .heading h1{
+    margin-top: 0px;
+    padding-top: 10px;
+  }
+  .theme{
+    top: 8px;
+    right: 20px;
+  }
+  }
+@media only screen and (max-width: 500px){
+
+  .heading{
+    left: 100px;
+    height: 50px;
+    width: 300px;
+  }
+  .heading h1{
+    letter-spacing: 2;
+    font-size: 30px;
+  }
+  .moreFunctions .material-icons{
+    font-size: 30px;
+  }
+
+  .moreFunctions{
+    left: 10px;
+  }
+  .moreFunctions label{
+    display: block;
+    width: 25px;
+    height: 20px;
+    padding: 4px 10px 10px 5px;
+  }
+
+  .theme{
+    right: 10px;
+  }
+  .theme label{
+    width: 47px;
+    height: 15px;
+    }
+   .theme label:after{
+      top: -3px;
+      left: 0px;
+      width: 21px;
+      height: 21px;
+      background: #101010 url('https://i.ibb.co/FxzBYR9/night.png')  no-repeat;
+      background-size: contain;
+    }
+   .theme label:active:after{
+      width: 21px;
+      height: 21px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+
+  .heading{
+    left: 80px;
+    height: 40px;
+    width: 230px;
+  }
+  .heading h1{
+    letter-spacing: 1;
+    font-size: 25px;
+  }
+}
 
 
  
