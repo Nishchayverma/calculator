@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta name="keywords" content="Calculator,Scientific Calculator">
     <meta name="author" content="Nishchay Verma">
+
+    <meta name="theme-color" content="#FF0000">
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
@@ -18,7 +21,8 @@
             <input type="checkbox" id="switch" onclick="themeChanger()" /><label for="switch"></label>
         </div>
         <div class="moreFunctions">
-            <input type="checkbox" id="more" onclick="moreOptions()" /><label for="more"> <i class="material-icons" >compare_arrows</i></label>
+            <input type="checkbox" id="more" onclick="moreOptions()" /><label for="more"> <i
+                    class="material-icons">compare_arrows</i></label>
         </div>
     </header>
     <section>
@@ -29,45 +33,46 @@
             </div>
         </div>
     </section>
-    <section >
-            <div class="main-functions">
-                <div class="grid-itemAC" onclick='clearOutput()'>AC</div>
-                <div class="grid-item" onclick='clearSome()'>CE</div>
-                <div class="grid-item" onclick='displayClicked(" % ")'>%</div>
-                <div class="grid-item" onclick='displayClicked(" / ")'>/</div>
-                <div class="grid-item" onclick='displayClicked("7")'>7</div>
-                <div class="grid-item" onclick='displayClicked("8")'>8</div>
-                <div class="grid-item" onclick='displayClicked("9")'>9</div>
-                <div class="grid-item" onclick='displayClicked(" * ")'>*</div>
-                <div class="grid-item" onclick='displayClicked("4")'>4</div>
-                <div class="grid-item" onclick='displayClicked("5")'>5</div>
-                <div class="grid-item" onclick='displayClicked("6")'>6</div>
-                <div class="grid-item" onclick='displayClicked(" - ")'>-</div>
-                <div class="grid-item" onclick='displayClicked("1")'>1</div>
-                <div class="grid-item" onclick='displayClicked("2")'>2</div>
-                <div class="grid-item" onclick='displayClicked("3")'>3</div>
-                <div class="grid-item" onclick='displayClicked("+")'>+</div>
-                <div class="grid-item0" onclick='displayClicked("0")'>0</div>
-                <div class="grid-item" onclick='displayClicked(".")'>.</div>
-                <div class="grid-itemequal" onclick='displayresult()'>=</div>
-            </div>
-            <div class="side-functions">
-                <div class="grid-item" onclick='displayClicked("sin")'>sin</div>
-                <div class="grid-item" onclick='displayClicked("cos")'>cos</div>
-                <div class="grid-item" onclick='displayClicked("tan")'>tan</div>
-                <div class="grid-item" onclick='displayClicked("log")'>log</div>
-                <div class="grid-item" onclick='displayClicked("ln")'>ln</div>
-                <div class="grid-item" onclick='displayClicked("&#x3C0")'>&#x3C0</div>
-                <div class="grid-item" onclick='displayClicked("1/x")'>1/x</div>
-                <div class="grid-item" onclick='displayClicked("!")'>x!</div>
-                <div class="grid-item" onclick='displayClicked("&radic;")'>&radic;</div>
-                <div class="grid-item" onclick='displayClicked("(")'>(</div>
-                <div class="grid-item" onclick='displayClicked(")")'>)</div>
-                <div class="grid-item" onclick='displayClicked("^")'>^</div>
-            </div>
+    <section>
+        <div class="main-functions">
+            <div class="grid-itemAC" onclick='clearOutput()'>AC</div>
+            <div class="grid-item" onclick='clearSome()'>CE</div>
+            <div class="grid-item" onclick='displayClicked(" % ")'>%</div>
+            <div class="grid-item" onclick='displayClicked(" / ")'>/</div>
+            <div class="grid-item" onclick='displayClicked("7")'>7</div>
+            <div class="grid-item" onclick='displayClicked("8")'>8</div>
+            <div class="grid-item" onclick='displayClicked("9")'>9</div>
+            <div class="grid-item" onclick='displayClicked(" * ")'>*</div>
+            <div class="grid-item" onclick='displayClicked("4")'>4</div>
+            <div class="grid-item" onclick='displayClicked("5")'>5</div>
+            <div class="grid-item" onclick='displayClicked("6")'>6</div>
+            <div class="grid-item" onclick='displayClicked(" - ")'>-</div>
+            <div class="grid-item" onclick='displayClicked("1")'>1</div>
+            <div class="grid-item" onclick='displayClicked("2")'>2</div>
+            <div class="grid-item" onclick='displayClicked("3")'>3</div>
+            <div class="grid-item" onclick='displayClicked("+")'>+</div>
+            <div class="grid-item0" onclick='displayClicked("0")'>0</div>
+            <div class="grid-item" onclick='displayClicked(".")'>.</div>
+            <div class="grid-itemequal" onclick='displayresult()'>=</div>
+        </div>
+        <div class="side-functions">
+            <div class="grid-item" onclick='displayClicked("sin")'>sin</div>
+            <div class="grid-item" onclick='displayClicked("cos")'>cos</div>
+            <div class="grid-item" onclick='displayClicked("tan")'>tan</div>
+            <div class="grid-item" onclick='displayClicked("log")'>log</div>
+            <div class="grid-item" onclick='displayClicked("ln")'>ln</div>
+            <div class="grid-item" onclick='displayClicked("&#x3C0")'>&#x3C0</div>
+            <div class="grid-item" onclick='displayClicked("1/x")'>1/x</div>
+            <div class="grid-item" onclick='displayClicked("!")'>x!</div>
+            <div class="grid-item" onclick='displayClicked("&radic;")'>&radic;</div>
+            <div class="grid-item" onclick='displayClicked("(")'>(</div>
+            <div class="grid-item" onclick='displayClicked(")")'>)</div>
+            <div class="grid-item" onclick='displayClicked("^")'>^</div>
+        </div>
         </div>
     </section>
     <script src="scripts.js"></script>
-   
+
 </body>
+
 </html>
